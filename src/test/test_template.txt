@@ -1,0 +1,37 @@
+import assert from 'assert';
+import { sequelize } from '../db';
+import { stub as stub_is_auth } from '../middleware/is_auth.js';
+
+import { User } from '../models/User.js';
+
+let created_objects = [];
+
+describe('USER', () => {
+  afterEach(async () => {
+    await Promise.all(created_objects.map(r => r.destroy()));
+    created_objects = [];
+  });
+  describe('CREATE', async () => {
+    it('', async () => {
+
+    });
+  });
+
+  describe('READ', async () => {
+    it('',async () => {
+
+    });
+  });
+
+  describe('UPDATE', async () => {
+    it('', async () => {
+
+    });
+  });
+
+  describe('DELETE', async () => {
+    it('', async () => {
+    
+    });
+  });
+})
